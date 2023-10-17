@@ -14,14 +14,9 @@ import {
       mongodb,
       git,
       figma,
-      docker,
-      meta,
-      starbucks,
-      tesla,
-      shopify,
-      carrent,
-      jobit,
-      tripguide,
+      exercises,
+      nike,
+      rentacar,
       threejs,
     } from "../assets";
     
@@ -46,7 +41,7 @@ import {
         icon: web,
       },
       {
-        title: "React Native Developer",
+        title: "React Developer",
         icon: mobile,
       },
       {
@@ -108,158 +103,75 @@ import {
         name: "figma",
         icon: figma,
       },
-      {
-        name: "docker",
-        icon: docker,
-      },
-    ];
-    
-    const experiences = [
-      {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
-        iconBg: "#383E56",
-        date: "March 2020 - April 2021",
-        points: [
-          "Developing and maintaining web applications using React.js and other related technologies.",
-          "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-          "Implementing responsive design and ensuring cross-browser compatibility.",
-          "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-      },
-      {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
-        iconBg: "#E6DEDD",
-        date: "Jan 2021 - Feb 2022",
-        points: [
-          "Developing and maintaining web applications using React.js and other related technologies.",
-          "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-          "Implementing responsive design and ensuring cross-browser compatibility.",
-          "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-      },
-      {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#383E56",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-          "Developing and maintaining web applications using React.js and other related technologies.",
-          "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-          "Implementing responsive design and ensuring cross-browser compatibility.",
-          "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-      },
-      {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#E6DEDD",
-        date: "Jan 2023 - Present",
-        points: [
-          "Developing and maintaining web applications using React.js and other related technologies.",
-          "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-          "Implementing responsive design and ensuring cross-browser compatibility.",
-          "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-      },
-    ];
-    
-    const testimonials = [
-      {
-        testimonial:
-          "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-        name: "Sara Lee",
-        designation: "CFO",
-        company: "Acme Co",
-        image: "https://randomuser.me/api/portraits/women/4.jpg",
-      },
-      {
-        testimonial:
-          "I've never met a web developer who truly cares about their clients' success like Rick does.",
-        name: "Chris Brown",
-        designation: "COO",
-        company: "DEF Corp",
-        image: "https://randomuser.me/api/portraits/men/5.jpg",
-      },
-      {
-        testimonial:
-          "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-        name: "Lisa Wang",
-        designation: "CTO",
-        company: "456 Enterprises",
-        image: "https://randomuser.me/api/portraits/women/6.jpg",
-      },
     ];
     
     const projects = [
       {
-        name: "Car Rent",
+        name: "Gym Exercises",
         description:
-          "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+          "Rapid API based application that allows users to search for different strength training exercises, providing related videos from youtube, and a list of similar exercises that target the same muscle group.",
         tags: [
           {
             name: "react",
-            color: "blue-text-gradient",
+            color: "yellow-text-gradient",
           },
           {
-            name: "mongodb",
+            name: "rapidapi",
             color: "green-text-gradient",
+          },
+          {
+            name: "materialui",
+            color: "pink-text-gradient",
+          },
+        ],
+        image: exercises,
+        source_code_link: "https://github.com/bjv753/gym_exercises-v1",
+        live_site_link: "https://gym-exercises-v1.netlify.app/",
+      },
+      {
+        name: "Nike App",
+        description:
+          "Nike landing page that showcases different Nike Products.",
+        tags: [
+          {
+            name: "react",
+            color: "yellow-text-gradient",
           },
           {
             name: "tailwind",
-            color: "pink-text-gradient",
-          },
-        ],
-        image: carrent,
-        source_code_link: "https://github.com/",
-      },
-      {
-        name: "Job IT",
-        description:
-          "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-        tags: [
-          {
-            name: "react",
-            color: "blue-text-gradient",
-          },
-          {
-            name: "restapi",
             color: "green-text-gradient",
           },
           {
-            name: "scss",
+            name: "javascript",
             color: "pink-text-gradient",
           },
         ],
-        image: jobit,
-        source_code_link: "https://github.com/",
+        image: nike,
+        source_code_link: "https://github.com/bjv753/nike-v1",
+        live_site_link: "https://nike-v1.netlify.app/",
       },
       {
-        name: "Trip Guide",
+        name: "Rent A Car",
         description:
-          "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+          "A comprehensive Rent-A-Car application that allows users to search through a large selection of popular vehicle makes and models.",
         tags: [
+          {
+            name: "typescript",
+            color: "yellow-text-gradient",
+          },
+          {
+            name: "tailwind",
+            color: "green-text-gradient",
+          },
           {
             name: "nextjs",
-            color: "blue-text-gradient",
-          },
-          {
-            name: "supabase",
-            color: "green-text-gradient",
-          },
-          {
-            name: "css",
             color: "pink-text-gradient",
           },
         ],
-        image: tripguide,
-        source_code_link: "https://github.com/",
+        image: rentacar,
+        source_code_link: "https://github.com/bjv753/car_showcase-v1",
+        live_site_link: "https://car-showcase-v1-ueq8.vercel.app/?manufacturer=bentley",
       },
     ];
     
-    export { services, technologies, experiences, testimonials, projects };
+    export { services, technologies, projects };

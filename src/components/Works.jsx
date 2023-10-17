@@ -15,9 +15,14 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  live_site_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div 
+    variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+    onClick={() => window.open(live_site_link, "_blank")}
+    className="cursor-pointer"
+    >
       <Tilt
         options={{
           max: 45,
@@ -44,6 +49,7 @@ const ProjectCard = ({
                 className='w-1/2 h-1/2 object-contain'
               />
             </div>
+
           </div>
         </div>
 
@@ -82,9 +88,9 @@ const Works = () => {
         >
           Following projects showcases my skills and experience through
           real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
+          links to code repositories and live demos. These projects reflect my
           ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
+          and manage multiple projects effectively.
         </motion.p>
       </div>
 
@@ -97,4 +103,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "work");
